@@ -54,6 +54,11 @@
             <p id="tryAgain" class="notify">❌ Pin Didn't Match, Please try again</p>
             <p id="matched" class="notify">✅ Pin Matched... Secret door is opening for you</p>
             <script>
+                //Step 1: Hiding the message
+                function hideMessage(){
+                    document.getElementById("tryAgain").style.display= "none";
+                    document.getElementById("matched").style.display= "none";
+                }
                 hideMessage();   
             </script>
         </div>

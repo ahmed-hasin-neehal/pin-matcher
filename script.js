@@ -1,8 +1,4 @@
-//Step 1: Hiding the message
-function hideMessage(){
-    document.getElementById("tryAgain").style.display= "none";
-    document.getElementById("matched").style.display= "none";
-}
+//Step 1: Hiding the message (Done in the notify-section class of the html file)
 
 //Step 2: Generating Pin
 function generatePin(){
@@ -21,8 +17,10 @@ function matchPin(){
     let generatedPin = document.getElementById("generate-num").value;
 
     if (generatedPin == "") {
+        alert("No Pin generated");
     }
     else if(inputNum == ""){
+        alert("No input detected. Please enter the Pin");
     }
     else{
         if(inputNum == generatedPin){
